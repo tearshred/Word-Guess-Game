@@ -1,5 +1,5 @@
 // Create an array of songs
-var song = ["master of puppets", "rock you like a hurricane", "black dog"];
+var song = ["master of puppets", "rock you like a hurricane", "black dog", "ride the lightning", "whole lotta love", "stairway to heaven", "paradise city", "dude looks like a lady"];
 
 // Setting wins, losses and number of tries
 var win = 0;
