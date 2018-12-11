@@ -37,11 +37,6 @@ function playGame() {
         // Checking if the letter typed is correct
         if (chosenSong.indexOf(userGuess) > -1 && event.keyCode != 32) {
 
-            // Creating a function that replaces a character at a specific index
-            String.prototype.replaceAt = function (index, replacement) {
-                return this.substr(0, index) + replacement + this.substr(index + replacement.length);
-            }
-
             // Puts all indexes of such a letter in an array
             var chosenWord = chosenSong;
             var specifiedLetter = userGuess;
@@ -53,6 +48,11 @@ function playGame() {
             }
 
             console.log(matches);
+
+            // Creating a function that replaces a character at a specific index
+            String.prototype.replaceAt = function (index, replacement) {
+                return this.substr(0, index) + replacement + this.substr(index + replacement.length);
+            }
 
             // Function and a for loop to change those display those characters on page
             var replaceStr = chosenSong.indexOf(userGuess);
